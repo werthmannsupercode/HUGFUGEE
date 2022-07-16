@@ -4,9 +4,9 @@ let client = AgoraRTC.createClient({mode:'rtc', codec:"vp8"})
 //#2
 let config = {
     appid:'3b993d95e10c445da7d06329e66e3392',
-    token:'0063b993d95e10c445da7d06329e66e3392IAAvdqZBMI+SqjZfhwff6mJMuqYin+sBwcleHIDo0Ev7CMJBJDUAAAAAEACQKMvtPwfUYgEAAQA/B9Ri',
+    token:'0063b993d95e10c445da7d06329e66e3392IACvE5g4V4JfeHP+bsW+X6fg5GZqJWJ6PCYjcRAKj5IOnIkteNsAAAAAEACQKMvt21zUYgEAAQDcXNRi',
     uid:null,
-    channel:'abc',
+    channel:'call2',
 }
 
 //#3 - Setting tracks for when user joins
@@ -25,12 +25,22 @@ let localTrackState = {
 let remoteTracks = {}
 
 
-document.getElementById('join-btn').addEventListener('click', async () => {
-    config.uid = document.getElementById('username').value
+let myFlags=document.querySelectorAll('a');
+myFlags.forEach(flag=>{
+flag.addEventListener('click',async()=>{
+    let language=flag.getAttribute('language');
+    config.uid = language;
     await joinStreams()
-    document.getElementById('join-wrapper').style.display = 'none'
+    document.querySelector('.flags').style.display = "none";
+    document.querySelector('.video-call').style.display = "block";
     document.getElementById('footer').style.display = 'flex'
-})
+    
+});
+});
+
+
+
+
 
 document.getElementById('mic-btn').addEventListener('click', async () => {
     //Check if what the state of muted currently is
@@ -86,7 +96,7 @@ document.getElementById('leave-btn').addEventListener('click', async () => {
     await client.leave()
     document.getElementById('footer').style.display = 'none'
     document.getElementById('user-streams').innerHTML = ''
-    document.getElementById('join-wrapper').style.display = 'block'
+    document.querySelector('.flags').style.display = 'block'
 
 })
 
@@ -107,9 +117,9 @@ let joinStreams = async () => {
             let speaker = evt[i].uid
             let volume = evt[i].level
             if(volume > 0){
-                document.getElementById(`volume-${speaker}`).src = './assets/volume-on.svg'
+                document.getElementById(`volume-${speaker}`).src = './images/videocall/volume-on.svg'
             }else{
-                document.getElementById(`volume-${speaker}`).src = './assets/volume-off.svg'
+                document.getElementById(`volume-${speaker}`).src = './images/videocall/volume-off.svg'
             }
             
         
@@ -127,7 +137,7 @@ let joinStreams = async () => {
     
     //#7 - Create player and add it to player list
     let player = `<div class="video-containers" id="video-wrapper-${config.uid}">
-                        <p class="user-uid"><img class="volume-icon" id="volume-${config.uid}" src="./assets/volume-on.svg" /> ${config.uid}</p>
+                        <p class="user-uid"><img class="volume-icon" id="volume-${config.uid}" src="./images/videocall/volume-on.svg" /> ${config.uid}</p>
                         <div class="video-player player" id="stream-${config.uid}"></div>
                   </div>`
 
@@ -162,7 +172,7 @@ let handleUserJoined = async (user, mediaType) => {
         }
  
         player = `<div class="video-containers" id="video-wrapper-${user.uid}">
-                        <p class="user-uid"><img class="volume-icon" id="volume-${user.uid}" src="./assets/volume-on.svg" /> ${user.uid}</p>
+                        <p class="user-uid"><img class="volume-icon" id="volume-${user.uid}" src="./images/videocall/volume-on.svg" /> ${user.uid}</p>
                         <div  class="video-player player" id="stream-${user.uid}"></div>
                       </div>`
         document.getElementById('user-streams').insertAdjacentHTML('beforeend', player);
@@ -186,4 +196,11 @@ let handleUserLeft = (user) => {
     delete remoteTracks[user.uid]
     document.getElementById(`video-wrapper-${user.uid}`).remove()
 }
+
+
+
+
+
+
+
 
