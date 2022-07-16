@@ -1,0 +1,73 @@
+[
+    {
+        "firstname": "Enrique",
+        "lastname": "Nunez-Velazco",
+        "email": "enrique.nunez-velazco@gmail.com",
+        "phone": "+49172567345",
+        "languages": [
+            "spanish",
+            "english",
+            "german",
+            "ukrainian"
+        ],
+        "departments": [
+            "phonecall",
+            "school",
+            "cafe"
+        ],
+        "img": ""
+    },
+    {
+        "firstname": "Feyami",
+        "lastname": "Caglayan",
+        "email": "feyami.caglayan@gmail.com",
+        "phone": "+90178567345",
+        "languages": [
+            "turkish",
+            "english",
+            "farsi",
+            "arabic"
+        ],
+        "departments": [
+            "phonecall",
+            "school",
+            "cafe"
+        ],
+        "img": ""
+    },
+    {
+        "firstname": "Marios",
+        "lastname": "Kolios",
+        "email": "marios.kolios@gmail.com",
+        "phone": "+301280980480",
+        "languages": [
+            "greek",
+            "english",
+            "french"
+        ],
+        "departments": [
+            "phonecall",
+            "school",
+            "cafe"
+        ],
+        "img": ""
+    },
+    {
+        "firstname": "Michaela",
+        "lastname": "Werthmann",
+        "email": "michaela.werthmann@gmail.com",
+        "phone": "+49178567345",
+        "languages": [
+            "farsi",
+            "english",
+            "german",
+            "russian"
+        ],
+        "departments": [
+            "phonecall",
+            "school",
+            "cafe"
+        ],
+        "img": ""
+    }
+]
