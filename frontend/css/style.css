@@ -18,6 +18,11 @@ html {
 
 body {
     background-color: #49A078;
+    font-family: 'Quicksand', sans-serif;
+}
+
+a {
+    cursor: pointer;
 }
 
 /* ================================
@@ -33,4 +38,220 @@ header a img {
     width: 80vw;
     object-fit: contain;
 
+}
+
+/* ================================
+MAIN STYLES
+=============================== */
+
+.flags a img {
+    width: 50vw;
+    object-fit: contain;
+    border: 2px solid white;
+    border-radius: 20px;
+    margin-top: 2vh;
+}
+
+.flags a img:hover {
+    box-shadow: 0 0 10px white;
+}
+
+.flags {
+    text-align: center;
+}
+
+.flags a:last-of-type {
+    background-color: #9CC5A1;
+    color: white;
+    border-radius: 20px;
+    display: block;
+    text-decoration: none;
+    width: 50vw;
+    padding: 2vh;
+    font-size: 2rem;
+    margin: 5vh auto;
+}
+
+.flags a:last-of-type:hover,
+.login button:hover,
+.registration button:hover,
+.completedRegistration a:hover {
+    background-color: #216869;
+}
+
+.login input {
+    display: block;
+    width: 80vw;
+    border: none;
+    font-size: 2rem;
+    padding: 1vh 4vw;
+    margin: 2vh auto;
+    border-radius: 20px;
+    color: gainsboro;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.login button {
+    background-color: #9CC5A1;
+    color: white;
+    border-radius: 20px;
+    display: block;
+    text-decoration: none;
+    width: 30vw;
+    padding: 1vh;
+    font-size: 2rem;
+    margin: 2vh auto;
+    border: none;
+    font-family: 'Quicksand', sans-serif;
+    cursor: pointer;
+}
+
+.registration {
+    padding-bottom: 5vh;
+}
+
+.registration h3 {
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    padding: 2vh 0;
+}
+
+.registration div label {
+    display: block;
+    color: white;
+    font-size: 2rem;
+    padding: 0 0 1vh 10vw;
+}
+
+.registration div input {
+    display: block;
+    width: 80vw;
+    border: none;
+    font-size: 2rem;
+    padding: 1vh 4vw;
+    margin: 0 auto 1vh auto;
+    border-radius: 20px;
+    color: gainsboro;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.registration button {
+    background-color: #9CC5A1;
+    color: white;
+    border-radius: 20px;
+    display: block;
+    text-decoration: none;
+    width: 50vw;
+    padding: 1vh;
+    font-size: 2rem;
+    margin: 2vh auto;
+    border: none;
+    font-family: 'Quicksand', sans-serif;
+    cursor: pointer;
+}
+
+.completedRegistration {
+    color: white;
+    text-align: center;
+}
+
+.completedRegistration h3 {
+    font-weight: 400;
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 2vh;
+}
+
+.completedRegistration p {
+    font-weight: 300;
+    font-size: 2rem;
+    text-align: center;
+    padding: 2vh 10vw;
+}
+
+.completedRegistration a {
+    background-color: #9CC5A1;
+    color: white;
+    border-radius: 20px;
+    display: block;
+    text-decoration: none;
+    width: 50vw;
+    padding: 1vh;
+    font-size: 2rem;
+    margin: 2vh auto;
+    border: none;
+    font-family: 'Quicksand', sans-serif;
+    cursor: pointer;
+}
+
+/* ================================
+SELECT BUTTONS CUSTOMIZED STYLES
+=============================== */
+
+.languages {
+    position: relative;
+}
+
+.languages select {
+    display: none;
+    /*hide original SELECT element: */
+}
+
+.select-selected {
+    background-color: white;
+    width: 80vw;
+    margin: 0 10vw;
+    color: grey;
+    border-radius: 20px;
+}
+
+/* Style the arrow inside the select element: */
+.select-selected:after {
+    position: absolute;
+    content: "";
+    top: 50px;
+    right: 15vw;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #49A078 transparent transparent transparent;
+}
+
+/* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active:after {
+    border-color: transparent transparent #49A078 transparent;
+    top: 40px;
+}
+
+/* style the items (options), including the selected item: */
+.select-items div,
+.select-selected {
+    color: grey;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+/* Style items (options): */
+.select-items {
+    position: absolute;
+    background-color: white;
+    top: 100%;
+    left: 10vw;
+    right: 10vw;
+    z-index: 99;
+    border-radius: 20px;
+}
+
+/* Hide the items when the select box is closed: */
+.select-hide {
+    display: none;
+}
+
+.select-items div:hover,
+.same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
 }
