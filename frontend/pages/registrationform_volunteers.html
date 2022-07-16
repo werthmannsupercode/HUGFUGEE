@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="image/x-icon" href="../images/hugfugee_favicon.png">
+    <title>HUGFUGEE - Register as a Volunteer</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <header>
+        <a href="../home.html"><img src="../images/hugfugee_logo.png" alt="logo"></a>
+    </header>
+    <main>
+        <div class="login">
+            <form action="#">
+                <input type="text" placeholder="email">
+                <input type="text" placeholder="password">
+                <button>Log In</button>
+            </form>
+        </div>
+        <div class="registration">
+            <h3>Or Register:</h3>
+            <form action="#">
+                <div>
+                    <label for="firstname">Firstname</label>
+                    <input type="text" id="firstname" name="firstname">
+                </div>
+                <div>
+                    <label for="lastname">Lastname</label>
+                    <input type="text" id="lastname" name="lastname">
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div>
+                    <label for="password">Choose a password</label>
+                    <input type="text" id="password" name="password">
+                </div>
+                <div>
+                    <label for="phone">Phone</label>
+                    <input type="number" id="phone" name="phone">
+                </div>
+                <div class="languages">
+                    <label for="language">What languages do you speak?</label>
+                    <select name="language" id="language">
+                        <option value="0">Select Languages:</option>
+                        <option value="1">Englisch</option>
+                        <option value="2">Greek</option>
+                        <option value="3">Spanish</option>
+                        <option value="4">French</option>
+                        <option value="5">Farsi</option>
+                        <option value="6">Arabic</option>
+                        <option value="7">Turkish</option>
+                    </select>
+                </div>
+                <div class="languages">
+                    <label for="topics">Where do you want to help us?</label>
+                    <select name="topics" id="topics">
+                        <option value="0">Choose Departments:</option>
+                        <option value="1">Phone Calls</option>
+                        <option value="2">School</option>
+                        <option value="3">Cafe</option>
+                        <option value="4">Basar</option>
+                    </select>
+                </div>
+                <button>Register Now</button>
+            </form>
+        </div>
+    </main>
+    <script src="../JS/selectButtons.js"></script>
+</body>
+
+</html>
