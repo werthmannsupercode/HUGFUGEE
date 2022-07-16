@@ -1,0 +1,36 @@
+[
+    {
+        "id":"",
+        "firstName": "",
+        "lastName": "",
+        "email": "",
+        "phone": "",
+        "languages": [
+            ""
+        ],
+        "session": {
+            "appid":"3b993d95e10c445da7d06329e66e3392",
+            "token":"0063b993d95e10c445da7d06329e66e3392IAAvdqZBMI+SqjZfhwff6mJMuqYin+sBwcleHIDo0Ev7CMJBJDUAAAAAEACQKMvtPwfUYgEAAQA/B9Ri",
+            "uid":null,
+            "channel":"abc"
+        }
+        
+    },
+    {
+        "firstName": "",
+        "lastName": "",
+        "email": "",
+        "phone": "",
+        "languages": [
+            ""
+        ],
+        "session": {
+            "appid":"3b993d95e10c445da7d06329e66e3392",
+            "token":"0063b993d95e10c445da7d06329e66e3392IACvE5g4V4JfeHP+bsW+X6fg5GZqJWJ6PCYjcRAKj5IOnIkteNsAAAAAEACQKMvt21zUYgEAAQDcXNRi",
+            "uid":null,
+            "channel":"call2"
+        }
+        
+    }
+     
+]
