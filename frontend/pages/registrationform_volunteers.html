@@ -47,8 +47,8 @@
                     <input type="number" id="phone" name="phone">
                 </div>
                 <div class="languages">
-                    <label for="language">What languages do you speak?</label>
-                    <select name="language" id="language">
+                    <p>What languages do you speak?</p>
+                    <!-- <select name="language" id="language">
                         <option value="0">Select Languages:</option>
                         <option value="1">Englisch</option>
                         <option value="2">Greek</option>
@@ -57,17 +57,57 @@
                         <option value="5">Farsi</option>
                         <option value="6">Arabic</option>
                         <option value="7">Turkish</option>
-                    </select>
+                    </select> -->
+                    <div>
+                        <input type="radio" name="english" id="english" value="English">
+                        <label for="english">English</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="dari" id="dari" value="Dari">
+                        <label for="dari">Dari</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="pashto" id="pashto" value="Pashto">
+                        <label for="pashto">Pashto</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="arabic" id="arabic" value="Arabic">
+                        <label for="arabic">Arabic</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="kurmanji" id="kurmanji" value="Kurmanji">
+                        <label for="kurmanji">Kurmanji</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="sorani" id="sorani" value="Sorani">
+                        <label for="sorani">Sorani</label>
+                    </div>
                 </div>
-                <div class="languages">
-                    <label for="topics">Where do you want to help us?</label>
-                    <select name="topics" id="topics">
+                <div class="departments">
+                    <p>Where do you want to help us?</p>
+                    <!-- <select name="topics" id="topics">
                         <option value="0">Choose Departments:</option>
                         <option value="1">Phone Calls</option>
                         <option value="2">School</option>
                         <option value="3">Cafe</option>
                         <option value="4">Basar</option>
-                    </select>
+                    </select> -->
+                    <div>
+                        <input type="radio" name="callcenter" id="callcenter" value="callcenter">
+                        <label for="callcenter">Call Center</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="school" id="school" value="school">
+                        <label for="school">School</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="cafe" id="cafe" value="cafe">
+                        <label for="cafe">Café</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="basar" id="basar" value="basar">
+                        <label for="basar">Basar</label>
+                    </div>
                 </div>
                 <button>Register Now</button>
             </form>
