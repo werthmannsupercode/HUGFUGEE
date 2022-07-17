@@ -6,7 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/videoStyle.css">
     <link rel="icon" type="image/x-icon" href="./images/hugfugee_favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&family=Permanent+Marker&display=swap" rel="stylesheet">
     <title>HUGFUGEE - Home</title>
 </head>
 
@@ -15,11 +19,44 @@
         <a href="home.html"><img src="./images/hugfugee_logo.png" alt="logo"></a>
     </header>
     <main class="flags">
-        <a href="#"><img src="./images/Flag_of_Afghanistan_(2004-2021,_Variant).svg.png" alt="Flag Afghanistan"></a>
-        <a href="#"><img src="./images/640px-POL_województwo_opolskie_flag.svg.png" alt="Flag Ukraina"></a>
-        <a href="#"><img src="./images/Flag_of_Syria.svg.png" alt="Flag Syria"></a>
+        <a href="#" language="Parisian"><img src="./images/Flag_of_Afghanistan_(2004-2021,_Variant).svg.png" alt="Flag Afghanistan"></a>
+        <a href="#" language="Ukrainian"><img src="./images/640px-POL_województwo_opolskie_flag.svg.png" alt="Flag Ukraina"></a>
+        <a href="#" language="Arabic"><img src="./images/Flag_of_Syria.svg.png" alt="Flag Syria"></a>
         <a href="./pages/registrationform_volunteers.html">Want to help?</a>
     </main>
+
+    <div class="video-call" style="display:none">
+        
+        <div id="user-streams" ></div>
+        
+    
+    
+        <!-- Wrapper for join button -->
+        <div id="footer">
+            <div class="icon-wrapper">
+                <img class="control-icon" id="camera-btn" src="./images/videocall/video.svg" />
+                <p>Cam</p>
+            </div>
+    
+            <div class="icon-wrapper">
+                <img class="control-icon" id="mic-btn" src="./images/videocall/microphone.svg" />
+                <p>Mic</p>
+            </div>
+    
+            <div class="icon-wrapper">
+                <img class="control-icon" id="leave-btn" src="./images/videocall/end-call.svg" />
+                <p>Leave</p>
+            </div>
+            
+           
+            
+            
+        </div>
+    
+    </div>
+    
+    <script src="https://download.agora.io/sdk/release/AgoraRTC_N.js"></script>
+    <script src='./script/home.js'></script>
 
 </body>
 

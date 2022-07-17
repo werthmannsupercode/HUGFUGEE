@@ -17,15 +17,17 @@
     </header>
     <main>
         <div class="login">
-            <form action="#">
+            <form action="./volunteer_home_screen.html">
                 <input type="text" placeholder="email">
                 <input type="text" placeholder="password">
-                <button>Log In</button>
-            </form>
+                 <button>Log In</button> 
+               
+            </form> 
+            <button id="register">Register</button>
         </div>
-        <div class="registration">
-            <h3>Or Register:</h3>
-            <form action="#">
+        <div class="registration" style="display:none">
+            <!-- <h3>Or Register:</h3> -->
+            <form action="./completedRegistration.html">
                 <div>
                     <label for="firstname">Firstname</label>
                     <input type="text" id="firstname" name="firstname">
@@ -113,6 +115,19 @@
             </form>
         </div>
     </main>
+
+    <script>
+	document.getElementById('register').addEventListener('click',  () => {
+      
+    
+    document.querySelector('.login').style.display = 'none';
+    document.querySelector('.registration').style.display = 'flex';
+})
+
+        
+		
+	</script>
+
 </body>
 
 </html>
