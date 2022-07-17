@@ -1,11 +1,7 @@
-
-
- 
-
 body {
     margin: 0;
     padding: 0;
-    background-color:  #49A078;
+    background-color: #49A078;
     color: aliceblue;
     font-family: 'Poppins', sans-serif;
 }
@@ -21,7 +17,7 @@ body {
 }
 
 
-#join-wrapper{
+#join-wrapper {
     display: flex;
     flex-direction: column;
     position: fixed;
@@ -31,17 +27,17 @@ body {
 }
 
 
-#username{
+#username {
     padding: 20px;
     font-size: 18px;
     border-radius: 10px;
-    border:none;
+    border: none;
     margin: 10px;
 }
 
-.volume-icon{
-    height:20px;
-    width:20px;
+.volume-icon {
+    height: 20px;
+    width: 20px;
 }
 
 #join-btn {
@@ -97,7 +93,7 @@ body {
 
 #footer {
     position: absolute;
-    bottom: 0;
+    bottom: 25vh;
     left: 0;
     display: none;
     justify-content: center;
@@ -114,7 +110,7 @@ body {
 
 .control-icon {
     display: block;
-    
+
     height: 30px;
     width: 30px;
     border-radius: 10px;

@@ -400,3 +400,51 @@ input:checked+.slider:before {
 .slider.round:before {
     border-radius: 50%;
 }
+
+/* ================================
+VOLUNTEER HOMESCREEN STYLES
+=============================== */
+
+.refugeeInfo p {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 12vh 0 2vh 0;
+}
+
+.refugeeInfo form {
+    padding: 0 10vw 5vh 10vw;
+}
+
+.refugeeInfo div {
+    display: flex;
+    flex-direction: column;
+}
+
+.refugeeInfo div label {
+    font-size: 1.6rem;
+}
+
+.refugeeInfo div input {
+    border: none;
+    padding: 1vh 4vw;
+    border-radius: 20px;
+    margin: 1vh 0;
+    font-size: 1.4rem;
+}
+
+.submitRefInfos {
+    background-color: #9CC5A1;
+    color: white;
+    border-radius: 20px;
+    display: block;
+    text-decoration: none;
+    width: 50vw;
+    padding: 1vh;
+    font-size: 2rem;
+    margin: 2vh auto;
+    border: none;
+    font-family: 'Quicksand', sans-serif;
+    cursor: pointer;
+    text-align: center;
+}

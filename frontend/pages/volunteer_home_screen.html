@@ -76,19 +76,27 @@
       <div class="refugeeInfo">
         <p>Refugee Information:</p>
         <form action=#">
-          <input type="text" id="firstname" name="firstname" placeholder="Firstname">
-
-          <input type="text" id="lastname" name="lastname" placeholder="Lastname">
-
-
-          <input type="text" id="languages" name="languages" placeholder="Languages spoken">
-
-
-          <input type="text" id="helpneeded" name="helpneeded" placeholder="Help needed">
-
-          <input type="text" id="importantnotes" name="importantnotes" placeholder="Important notes">
-
-          <button>Submit</button>
+          <div>
+            <label for="firstname">Firstname</label>
+            <input type="text" id="firstname" name="firstname">
+          </div>
+          <div>
+            <label for="lastname">Lastname</label>
+            <input type="text" id="lastname" name="lastname">
+          </div>
+          <div>
+            <label for="languages">Languages</label>
+            <input type="text" id="languages" name="languages">
+          </div>
+          <div>
+            <label for="helpneeded">Help needed:</label>
+            <input type="text" id="helpneeded" name="helpneeded">
+          </div>
+          <div>
+            <label for="importantnotes">Important notes:</label>
+            <input type="text" id="importantnotes" name="importantnotes">
+          </div>
+          <button class="submitRefInfos">Submit</button>
         </form>
 
       </div>
