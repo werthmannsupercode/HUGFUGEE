@@ -282,6 +282,7 @@ VOLUNTEER HOMESCREEN STYLES
 .profileIMGname p {
     font-size: 2rem;
     font-weight: 600;
+    color: white;
 }
 
 .profileIMGname div {
@@ -447,4 +448,14 @@ VOLUNTEER HOMESCREEN STYLES
     font-family: 'Quicksand', sans-serif;
     cursor: pointer;
     text-align: center;
+}
+
+/* ================================
+VOLUNTEER PROFILE SETTINGS STYLES
+=============================== */
+
+.uploadIMG {
+    border-top: 1px solid white;
+    margin: 2vh 10vw;
+    padding: 2vh 0;
 }
