@@ -20,9 +20,9 @@
             <form action="./volunteer_home_screen.html">
                 <input type="text" placeholder="email">
                 <input type="text" placeholder="password">
-                 <button>Log In</button> 
-               
-            </form> 
+                <button>Log In</button>
+
+            </form>
             <button id="register">Register</button>
         </div>
         <div class="registration" style="display:none">
@@ -50,16 +50,6 @@
                 </div>
                 <div class="languages">
                     <p>What languages do you speak?</p>
-                    <!-- <select name="language" id="language">
-                        <option value="0">Select Languages:</option>
-                        <option value="1">Englisch</option>
-                        <option value="2">Greek</option>
-                        <option value="3">Spanish</option>
-                        <option value="4">French</option>
-                        <option value="5">Farsi</option>
-                        <option value="6">Arabic</option>
-                        <option value="7">Turkish</option>
-                    </select> -->
                     <div>
                         <input type="checkbox" name="english" id="english" value="English">
                         <label for="english">English</label>
@@ -87,13 +77,6 @@
                 </div>
                 <div class="departments">
                     <p>Where do you want to help us?</p>
-                    <!-- <select name="topics" id="topics">
-                        <option value="0">Choose Departments:</option>
-                        <option value="1">Phone Calls</option>
-                        <option value="2">School</option>
-                        <option value="3">Cafe</option>
-                        <option value="4">Basar</option>
-                    </select> -->
                     <div>
                         <input type="checkbox" name="callcenter" id="callcenter" value="callcenter">
                         <label for="callcenter">Call Center</label>
@@ -117,16 +100,16 @@
     </main>
 
     <script>
-	document.getElementById('register').addEventListener('click',  () => {
-      
-    
-    document.querySelector('.login').style.display = 'none';
-    document.querySelector('.registration').style.display = 'flex';
-})
+        document.getElementById('register').addEventListener('click', () => {
 
-        
-		
-	</script>
+
+            document.querySelector('.login').style.display = 'none';
+            document.querySelector('.registration').style.display = 'flex';
+        })
+
+
+
+    </script>
 
 </body>
 

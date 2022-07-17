@@ -2,30 +2,103 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="icon" type="image/x-icon" href="../images/hugfugee_favicon.png">
-    <title>HUGFUGEE - Register as a Volunteer</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" type="image/x-icon" href="../images/hugfugee_favicon.png">
+  <title>HUGFUGEE - Register as a Volunteer</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
-    <header>
-        <a href="../home.html"><img src="../images/hugfugee_logo.png" alt="logo"></a>
-    </header>
-    <main>
-    <div>
+  <header>
+    <a href="../home.html"><img src="../images/hugfugee_logo.png" alt="logo"></a>
+  </header>
+  <main>
+    <div class="profileIMGname">
       <img src="../images/Enrique.bmp" alt="prof pic" />
-      <p>Enrique Nunez Velazco</p>
+      <div>
+        <p>Enrique </p>
+        <p>Nunez Velazco</p>
+      </div>
     </div>
-    <form action="./volunteer_home_screen.html">
-      <input type="text" placeholder="name" />
-      <input type="text" placeholder="languages" />
-      <input type="text" placeholder="departments" />
-      <button>Save changes</button>
-    </form>
-    </main>
-  </body>
+    <div class="registration">
+      <form action="./volunteer_home_screen.html">
+        <div>
+          <label for="firstname">Firstname</label>
+          <input type="text" id="firstname" name="firstname">
+        </div>
+        <div>
+          <label for="lastname">Lastname</label>
+          <input type="text" id="lastname" name="lastname">
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email">
+        </div>
+        <div>
+          <label for="password">Choose a password</label>
+          <input type="text" id="password" name="password">
+        </div>
+        <div>
+          <label for="phone">Phone</label>
+          <input type="number" id="phone" name="phone">
+        </div>
+        <div class="languages">
+          <p>What languages do you speak?</p>
+          <div>
+            <input type="radio" name="english" id="english" value="English">
+            <label for="english">English</label>
+          </div>
+          <div>
+            <input type="radio" name="dari" id="dari" value="Dari">
+            <label for="dari">Dari</label>
+          </div>
+          <div>
+            <input type="radio" name="pashto" id="pashto" value="Pashto">
+            <label for="pashto">Pashto</label>
+          </div>
+          <div>
+            <input type="radio" name="arabic" id="arabic" value="Arabic">
+            <label for="arabic">Arabic</label>
+          </div>
+          <div>
+            <input type="radio" name="kurmanji" id="kurmanji" value="Kurmanji">
+            <label for="kurmanji">Kurmanji</label>
+          </div>
+          <div>
+            <input type="radio" name="sorani" id="sorani" value="Sorani">
+            <label for="sorani">Sorani</label>
+          </div>
+        </div>
+        <div class="departments">
+          <p>Where do you want to help us?</p>
+          <div>
+            <input type="radio" name="callcenter" id="callcenter" value="callcenter">
+            <label for="callcenter">Call Center</label>
+          </div>
+          <div>
+            <input type="radio" name="school" id="school" value="school">
+            <label for="school">School</label>
+          </div>
+          <div>
+            <input type="radio" name="cafe" id="cafe" value="cafe">
+            <label for="cafe">Café</label>
+          </div>
+          <div>
+            <input type="radio" name="basar" id="basar" value="basar">
+            <label for="basar">Basar</label>
+          </div>
+        </div>
+        <div class="uploadIMG">
+          <label for="profileIMGUpload">Choose an image..</label>
+          <input type="file" name="profileIMGUpload" id="profileIMGUpload">
+        </div>
+        <button>Save changes</button>
+      </form>
+    </div>
+  </main>
+</body>
+
 </html>
