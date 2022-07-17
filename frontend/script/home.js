@@ -142,7 +142,7 @@ let joinStreams = async () => {
                         <div class="video-player player" id="stream-${config.uid}"></div>
                   </div>`
 
-    document.getElementById('user-streams').insertAdjacentHTML('beforeend', player);
+    // document.getElementById('user-streams').insertAdjacentHTML('beforeend', player);
     //#8 - Player user stream in div
     localTracks.videoTrack.play(`stream-${config.uid}`)
     
