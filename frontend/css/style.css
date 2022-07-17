@@ -463,3 +463,8 @@ VOLUNTEER PROFILE SETTINGS STYLES
     margin: 2vh 10vw;
     padding: 2vh 0;
 }
+
+.uploadIMG p {
+    font-size: 2rem;
+    color: white;
+}
