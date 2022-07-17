@@ -1,6 +1,6 @@
-<img src="./images/hugfugee_logo.png" alt="logo">
+<img src="./frontend/images/hugfugee_logo.png" alt="logo">
 
-<h1>🌸 Welcome you all on the official github of <b>HUGFUGEE<b> 🌸</h1>
+<h1>🌸 Welcome you all on the official github of <b>HUGFUGEE<b></h1>
 
 <p>In the hackathon "Hack for the future" we have made it our mission to develop an app that supports the people who need our help the most.</p>
 <br>
