@@ -136,7 +136,21 @@ let joinStreams = async () => {
 
     ])
     
-  
+   //#7 - Create player and add it to player list
+   let player = `<div class="video-containers" id="video-wrapper-${config.uid}">
+   <p class="user-uid"><img class="volume-icon" id="volume-${config.uid}" src="./images/videocall/volume-on.svg" /> ${config.uid}</p>
+   <div class="video-player player" id="stream-${config.uid}"></div>
+</div>`
+
+// document.getElementById('user-streams').insertAdjacentHTML('beforeend', player);
+//#8 - Player user stream in div
+localTracks.videoTrack.play(`stream-${config.uid}`)
+
+
+//#9 Add user to user list of names/ids
+
+//#10 - Publish my local video tracks to entire channel so everyone can see it
+await client.publish([localTracks.audioTrack, localTracks.videoTrack])
 
 }
 
